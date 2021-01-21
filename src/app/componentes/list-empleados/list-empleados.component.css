@@ -1,0 +1,11 @@
+.eliminar {
+    cursor: pointer;
+    color: red;
+}
+
+.editar {
+    cursor: pointer;
+}
+.fa-edit, .fa-trash-alt {
+    font-size: 20px;
+}

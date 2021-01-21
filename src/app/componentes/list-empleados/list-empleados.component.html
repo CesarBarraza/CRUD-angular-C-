@@ -1,0 +1,30 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">APELLIDO</th>
+        <th scope="col">DNI</th>
+        <th scope="col">EMAIL</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let emp of empleados">
+      <tr>
+        <th scope="row">{{emp.nombre}}</th>
+        <td>{{emp.apellido}}</td>
+        <td>{{emp.dni}}</td>
+        <td>{{emp.email}}</td>
+        <td>
+          <a class="eliminar nav-link" (click)="eliminarEmpleado(emp.id)">
+            <span class="far fa-trash-alt"></span>
+          </a>
+        </td>
+        <td>
+          <a class="editar nav-link" (click)="seleccionarEmpleado(emp)">
+            <span class="far fa-edit"></span>
+          </a>
+         </td>
+      </tr>
+    </tbody>
+  </table>
